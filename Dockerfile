@@ -48,7 +48,6 @@ COPY ./files/php-fpm.conf /etc/php-fpm.conf
 COPY ./files/overrides.conf /etc/overrides.conf
 COPY ./files/www.conf /etc/php-fpm.d/www.conf
 COPY ./files/php.ini /etc/php.ini
-COPY ./files/sleep.sh /etc/sleep.sh
 RUN yum clean all
 
 STOPSIGNAL SIGQUIT
